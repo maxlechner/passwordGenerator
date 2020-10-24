@@ -59,13 +59,14 @@ function generatePassword() {
     }
 
     console.log(charSet);
-    console.log(charSet.length)
+    console.log(charSet.length);
 
     if (charSet.length === 0) {
       alert("You did not define any valid characters.");
       return;
     }
 
+    // iterative loop to cycle through the character set into a password variable.
     while( password.length < totalCharacters) {
 
       // select random character from charset
@@ -74,9 +75,11 @@ function generatePassword() {
       // append randomchar to password
       password += randomChar;
       console.log(password)
-
     }
+
     console.log(password)
+
+    // returns the password defined in the while loop
     return password;
 }
 
