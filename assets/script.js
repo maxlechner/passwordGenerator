@@ -14,7 +14,7 @@ function generatePassword() {
   // create empty array to pass values into 
   var charSet = [];
 
-  // set empty string for password to add into
+  // set empty string for password to append values in
   var password = "";
 
   // validate the input is a number between 8 and 128, exit with an error message if it is not.
